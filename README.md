@@ -1,7 +1,3 @@
-Aqui está o conteúdo sugerido para o seu README:
-
----
-
 # Serviço de Abertura de Contas
 
 ## Descrição do Projeto
@@ -10,7 +6,7 @@ Este projeto é um serviço de abertura de contas desenvolvido em Java com Sprin
 
 ## Arquitetura da solução
 
-![Desafio_Santander](https://github.com/user-attachments/assets/5e987a30-ed30-4aa7-b287-8694e681e973)
+![Desafio_Santander](https://github.com/user-attachments/assets/36c81587-d0cd-4223-b7ee-03c44a5523ce)
 
 ## Fluxo de Execução
 
