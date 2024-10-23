@@ -10,7 +10,7 @@ Este projeto é um serviço de abertura de contas desenvolvido em Java com Sprin
 
 ## Arquitetura da solução
 
-![Desafio_Santander](https://github.com/user-attachments/assets/9831760a-979c-4ae7-b066-fbdb3be958aa)
+![Desafio_Santander](https://github.com/user-attachments/assets/5e987a30-ed30-4aa7-b287-8694e681e973)
 
 ## Fluxo de Execução
 
