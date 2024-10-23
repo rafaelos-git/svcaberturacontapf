@@ -2,9 +2,11 @@ package com.santander.svcaberturaconta.adapters.out;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.santander.svcaberturaconta.adapters.out.exceptions.FalhaEnvioKafkaException;
 import com.santander.svcaberturaconta.application.core.domain.Conta;
 import com.santander.svcaberturaconta.application.ports.out.EnviarDadosContaParaKafkaOutputPort;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.KafkaException;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
@@ -22,7 +24,10 @@ public class EnviarDadosContaParaKafkaAdapter implements EnviarDadosContaParaKaf
             String contaJson = objectMapper.writeValueAsString(conta);
             kafkaTemplate.send("tp-abertura-conta-out", contaJson);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            throw new FalhaEnvioKafkaException("Erro ao serializar a conta em JSON: " + conta.getNumeroConta(), e);
+        } catch (KafkaException e) {
+            throw new FalhaEnvioKafkaException("Erro ao enviar mensagem para o Kafka para a conta: "
+                    + conta.getNumeroConta(), e);
         }
     }
 }
