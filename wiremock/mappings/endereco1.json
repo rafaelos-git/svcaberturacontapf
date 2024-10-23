@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/enderecos/18000001"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "rua": "Rua 1",
+            "bairro": "Vila Barao",
+            "cidade": "Sorocaba",
+            "estado": "Sao Paulo",
+            "pais": "Brasil"
+        }
+    }
+}
