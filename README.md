@@ -97,16 +97,6 @@ Content-Type: application/json
 }
 ```
 
-## Testes
-
-A aplicação inclui testes unitários e de integração, incluindo simulações das APIs externas utilizando WireMock.
-
-Para rodar os testes:
-
-```bash
-./gradlew test
-```
-
 ## APIs Externas Simuladas
 
 As APIs de CPF e CEP são mockadas com **WireMock**. Os mocks estão configurados para retornar respostas predefinidas, garantindo que os testes sejam executados de maneira determinística.
