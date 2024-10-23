@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/enderecos/18061220"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "rua": "Rua Guarda Civil",
+            "bairro": "Vila Barao",
+            "cidade": "Sorocaba",
+            "estado": "Sao Paulo",
+            "pais": "Brasil"
+        }
+    }
+}

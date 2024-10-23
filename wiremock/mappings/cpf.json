@@ -1,0 +1,15 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/cpfs/42439446874"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "isValid": true
+        }
+    }
+}
