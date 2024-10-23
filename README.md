@@ -47,8 +47,6 @@ src/
 └── config
 ```
 
-(Insira aqui um diagrama visual da arquitetura hexagonal)
-
 ## Tecnologias Utilizadas
 
 - **Java 17**
