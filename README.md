@@ -1,16 +1,16 @@
-# Serviço de Abertura de Contas
+# Serviço de Cadastro de Perfil
 
 ## Descrição do Projeto
 
-Este projeto é um serviço de abertura de contas desenvolvido em Java com Spring Boot, utilizando arquitetura Hexagonal (Ports and Adapters). O serviço segue um fluxo que envolve validação de CPF, consulta de endereço a partir do CEP, e persistência dos dados tanto em um banco de dados relacional (MySQL) quanto em um banco NoSQL (MongoDB). Por fim, as informações da nova conta são enviadas para um tópico Kafka.
+Este projeto é um serviço de cadastro de perfil desenvolvido em Java com Spring Boot, utilizando arquitetura Hexagonal (Ports and Adapters). O serviço segue um fluxo que envolve validação de CPF, consulta de endereço a partir do CEP, e persistência dos dados tanto em um banco de dados relacional (MySQL) quanto em um banco NoSQL (MongoDB). Por fim, as informações da nova conta são enviadas para um tópico Kafka.
 
 ## Arquitetura da solução
 
-![svcaberturaconta-Arquitetura drawio (2)](https://github.com/user-attachments/assets/bb9071ba-4b16-401d-bcf7-e1d11ab13169)
+![svcaberturaconta-Arquitetura drawio (3)](https://github.com/user-attachments/assets/ec4423a2-d61e-4279-8da2-02e80ebc9b8e)
 
 ## Fluxograma
 
-![svcaberturaconta-Fluxograma drawio](https://github.com/user-attachments/assets/3e0f00f8-121b-4238-9808-194ed3acee03)
+![svcaberturaconta-Fluxograma drawio (1)](https://github.com/user-attachments/assets/83e0e35f-8a7e-4f7c-ad8c-c4cfb111e046)
 
 ## Fluxo de Execução
 
