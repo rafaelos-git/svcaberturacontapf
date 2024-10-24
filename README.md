@@ -6,7 +6,7 @@ Este projeto é um serviço de abertura de contas desenvolvido em Java com Sprin
 
 ## Arquitetura da solução
 
-![svcaberturaconta-Arquitetura drawio](https://github.com/user-attachments/assets/31f00eec-248a-487d-928a-f6ab563f0c45)
+![svcaberturaconta-Arquitetura drawio (2)](https://github.com/user-attachments/assets/bb9071ba-4b16-401d-bcf7-e1d11ab13169)
 
 ## Fluxograma
 
