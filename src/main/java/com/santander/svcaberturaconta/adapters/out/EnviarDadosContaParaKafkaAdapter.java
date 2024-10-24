@@ -22,7 +22,7 @@ public class EnviarDadosContaParaKafkaAdapter implements EnviarDadosContaParaKaf
     public void enviar(Conta conta) {
         try {
             String contaJson = objectMapper.writeValueAsString(conta);
-            kafkaTemplate.send("tp-abertura-conta-out", contaJson);
+            kafkaTemplate.send("tp-cadastro-perfil-out", contaJson);
         } catch (JsonProcessingException e) {
             throw new FalhaEnvioKafkaException("Erro ao serializar a conta em JSON: " + conta.getNumeroConta(), e);
         } catch (KafkaException e) {

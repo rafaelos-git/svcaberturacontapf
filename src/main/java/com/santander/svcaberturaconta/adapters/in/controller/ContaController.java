@@ -2,6 +2,7 @@ package com.santander.svcaberturaconta.adapters.in.controller;
 
 import com.santander.svcaberturaconta.adapters.in.controller.mapper.ContaMapper;
 import com.santander.svcaberturaconta.adapters.in.controller.request.ContaRequest;
+import com.santander.svcaberturaconta.adapters.in.controller.response.ContaResponse;
 import com.santander.svcaberturaconta.application.ports.in.CadastrarContaInputPort;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,9 @@ public class ContaController {
     private ContaMapper contaMapper;
 
     @PostMapping
-    public ResponseEntity<Void> cadastrar(@Valid @RequestBody ContaRequest contaRequest) {
+    public ResponseEntity<ContaResponse> cadastrar(@Valid @RequestBody ContaRequest contaRequest) {
         var conta = contaMapper.toConta(contaRequest);
         cadastrarContaInputPort.cadastrar(conta, contaRequest.getCep());
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(new ContaResponse("Cliente cadastrado com sucesso"));
     }
 }
