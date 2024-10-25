@@ -61,7 +61,6 @@ public class CadastrarContaUseCase implements CadastrarContaInputPort {
     }
 
     private void processarCadastro(Conta conta, Endereco endereco) {
-        System.out.println(endereco.getCidade());
         conta.setEndereco(endereco);
         salvarLogConsultaCepOutputPort.salvar(new Log(endereco));
 
